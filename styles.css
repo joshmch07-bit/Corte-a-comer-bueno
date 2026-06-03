@@ -354,6 +354,53 @@ section {
   width: 100%;
 }
 
+.operations-panel {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: hidden;
+}
+
+.operations-panel article {
+  background:
+    radial-gradient(circle at 82% 16%, rgba(255, 61, 120, 0.1), transparent 28%),
+    var(--white);
+  min-height: 258px;
+  padding: 30px;
+  position: relative;
+}
+
+.operations-panel svg {
+  color: var(--purple);
+  height: 44px;
+  margin-bottom: 34px;
+  width: 44px;
+}
+
+.operations-panel span {
+  color: var(--pink);
+  font-size: 12px;
+  font-weight: 950;
+  position: absolute;
+  right: 26px;
+  top: 26px;
+}
+
+.operations-panel h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.operations-panel p {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.45;
+  margin: 0;
+}
+
 .metric-row {
   align-items: baseline;
   border-top: 1px solid var(--line);
@@ -730,6 +777,14 @@ footer p {
   .media-copy.reverse,
   .quote {
     grid-template-columns: 1fr;
+  }
+
+  .operations-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .operations-panel article {
+    min-height: 210px;
   }
 
   .inline-cta {
