@@ -3,6 +3,10 @@ const hero = document.querySelector(".hero");
 const heroImage = document.querySelector(".hero-image");
 const revealItems = document.querySelectorAll(".reveal");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const trackEvent = (name, params = {}) => {
+  if (typeof window.gtag !== "function") return;
+  window.gtag("event", name, params);
+};
 
 if (!prefersReducedMotion && hero && heroImage) {
   const moveHero = () => {
@@ -34,15 +38,60 @@ if ("IntersectionObserver" in window) {
 form?.addEventListener("submit", (event) => {
   event.preventDefault();
   const button = form.querySelector("button");
+  const status = form.querySelector("[data-form-status]");
   if (!button) return;
 
-  button.textContent = "Solicitud lista para conectar";
+  if (!form.reportValidity()) return;
+
+  const defaultText = button.textContent;
+  const showStatus = (message, type) => {
+    if (!status) return;
+    status.textContent = message;
+    status.className = `form-status is-visible is-${type}`;
+  };
+
+  button.textContent = "Enviando solicitud...";
   button.disabled = true;
   button.style.opacity = "0.82";
 
-  window.setTimeout(() => {
-    button.textContent = "Enviar solicitud";
-    button.disabled = false;
-    button.style.opacity = "1";
-  }, 2600);
+  fetch(form.action, {
+    method: "POST",
+    body: new FormData(form),
+    headers: { Accept: "application/json" },
+  })
+    .then((response) => {
+      if (!response.ok) throw new Error("formspree-error");
+      form.reset();
+      trackEvent("generate_lead", {
+        event_category: "form",
+        event_label: "quote_form",
+      });
+      showStatus("Listo. Recibimos tu solicitud y el equipo de Corte a Comer te contactara pronto.", "success");
+    })
+    .catch(() => {
+      showStatus("No pudimos enviar la solicitud. Intenta otra vez o contactanos por WhatsApp.", "error");
+    })
+    .finally(() => {
+      button.textContent = defaultText;
+      button.disabled = false;
+      button.style.opacity = "1";
+    });
+});
+
+document.querySelectorAll('a[href="#cotizacion"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    trackEvent("select_content", {
+      event_category: "cta",
+      event_label: link.textContent.trim(),
+    });
+  });
+});
+
+document.querySelectorAll('a[href*="wa.me"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    trackEvent("contact", {
+      event_category: "cta",
+      event_label: link.textContent.trim(),
+    });
+  });
 });

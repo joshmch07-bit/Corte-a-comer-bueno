@@ -17,7 +17,15 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/hero-production.jpg" />
     <link rel="preload" as="image" href="assets/hero-production.jpg" />
+    <link rel="preload" as="image" href="assets/logo-corte-a-comer.png" />
     <link rel="stylesheet" href="styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMTWX074V6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GMTWX074V6');
+    </script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -99,8 +107,7 @@
     </svg>
     <header class="site-header" data-header>
       <a class="brand" href="#inicio" aria-label="Corte a Comer inicio">
-        <span class="brand-mark">C</span>
-        <span>corte a comer</span>
+        <img class="brand-logo" src="assets/logo-corte-a-comer.png" alt="Corte a Comer" />
       </a>
       <nav class="nav" aria-label="Principal">
         <a href="#operacion">Operación</a>
@@ -126,6 +133,7 @@
           <div class="hero-actions">
             <a class="button primary" href="#cotizacion">Solicitar cotización</a>
             <a class="button secondary" href="#cotizacion">Hablemos de tu producción</a>
+            <a class="button urgent" href="https://wa.me/525572036146?text=Evento%20urgente%3A%20hola%20Corte%20a%20Comer%2C%20necesito%20apoyo%20para%20una%20producci%C3%B3n." target="_blank" rel="noreferrer">Evento urgente</a>
           </div>
         </div>
       </section>
@@ -298,16 +306,37 @@
             Comparte fechas, ciudad, número de personas y tipo de servicio. Te responderemos con
             una propuesta clara para tu crew, staff, talento o evento corporativo.
           </p>
-          <a class="whatsapp" href="https://wa.me/?text=Hola%20Corte%20a%20Comer%2C%20quiero%20cotizar%20una%20producci%C3%B3n" target="_blank" rel="noreferrer">
+          <a class="whatsapp" href="https://wa.me/525572036146?text=Hola%20Corte%20a%20Comer%2C%20quiero%20cotizar%20una%20producci%C3%B3n" target="_blank" rel="noreferrer">
             Contactar por WhatsApp
           </a>
+          <a class="whatsapp urgent-link" href="https://wa.me/525572036146?text=Evento%20urgente%3A%20hola%20Corte%20a%20Comer%2C%20necesito%20apoyo%20para%20una%20producci%C3%B3n." target="_blank" rel="noreferrer">
+            Evento urgente
+          </a>
         </div>
-        <form class="lead-form">
-          <label>Nombre<input name="name" autocomplete="name" placeholder="Tu nombre" /></label>
-          <label>Email<input name="email" type="email" autocomplete="email" placeholder="correo@empresa.com" /></label>
-          <label>Producción o evento<input name="project" placeholder="Filmación, congreso, activación..." /></label>
+        <form class="lead-form" id="quote-form" action="https://formspree.io/f/mqeoebqa" method="POST">
+          <input type="hidden" name="_subject" value="Nueva solicitud desde corteacomer.mx" />
+          <label class="form-honeypot">No llenar<input name="_gotcha" tabindex="-1" autocomplete="off" /></label>
+          <div class="form-status" data-form-status aria-live="polite"></div>
+          <label>Nombre<input name="name" autocomplete="name" placeholder="Tu nombre" required /></label>
+          <label>Email<input name="email" type="email" autocomplete="email" placeholder="correo@empresa.com" required /></label>
+          <label>Teléfono o WhatsApp<input name="phone" type="tel" autocomplete="tel" placeholder="+52..." /></label>
+          <label>
+            Servicio de interés
+            <select name="service" required>
+              <option value="">Selecciona una opción</option>
+              <option>Crew Essential</option>
+              <option>Crew Pro</option>
+              <option>Healthy Crew</option>
+              <option>Talent Premium</option>
+              <option>Executive Experience</option>
+              <option>Production Coffee Bar</option>
+              <option>Full Food Operations</option>
+              <option>Operación sustentable</option>
+            </select>
+          </label>
+          <label>Producción o evento<input name="project" placeholder="Filmación, congreso, activación..." required /></label>
           <label>Número de personas<input name="people" inputmode="numeric" placeholder="Ej. 180" /></label>
-          <label>Mensaje<textarea name="message" rows="4" placeholder="Fechas, ciudad, horarios y necesidades clave"></textarea></label>
+          <label>Mensaje<textarea name="message" rows="4" placeholder="Fechas, ciudad, horarios y necesidades clave" required></textarea></label>
           <button class="button primary" type="submit">Enviar solicitud</button>
         </form>
       </section>
@@ -315,8 +344,7 @@
 
     <footer>
       <div class="brand">
-        <span class="brand-mark">C</span>
-        <span>corte a comer</span>
+        <img class="brand-logo" src="assets/logo-corte-a-comer.png" alt="Corte a Comer" />
       </div>
       <p>Food Operations for Productions</p>
     </footer>
