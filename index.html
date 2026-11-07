@@ -4,14 +4,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Catering para Producciones, Filmaciones y Eventos | Corte a Comer</title>
-  <meta name="description" content="Catering y operación alimentaria para producciones, filmaciones y eventos corporativos. Desayunos, comidas, cenas, box lunch, coffee break y servicio para staff, crew, talento y cliente." />
+  <meta name="description" content="Catering y operación alimentaria para producciones, filmaciones y eventos corporativos. Desayuno, comida, cena, box lunch, coffee break y servicio para staff, crew, talento y cliente." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
   <link rel="canonical" href="https://corteacomer.mx/" />
-  <meta name="theme-color" content="#111111" />
-  <meta property="og:title" content="Corte a Comer | Catering para Producciones y Eventos" />
-  <meta property="og:description" content="Tú produces. Nosotros alimentamos la operación. Soluciones de alimentos para staff, crew, talento y cliente." />
+  <link rel="alternate" hreflang="es-MX" href="https://corteacomer.mx/" />
+  <meta name="theme-color" content="#111418" />
+  <meta property="og:locale" content="es_MX" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Corte a Comer" />
+  <meta property="og:title" content="Corte a Comer | Catering para Producciones y Eventos" />
+  <meta property="og:description" content="Tú produces. Nosotros alimentamos la operación. Alimentación para staff, crew, talento y cliente." />
+  <meta property="og:url" content="https://corteacomer.mx/" />
   <meta property="og:image" content="https://corteacomer.mx/assets/hero-production.jpg" />
-  <link rel="preload" as="image" href="assets/hero-production.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preload" as="image" href="assets/hero-production.jpg" fetchpriority="high" />
   <link rel="preload" as="image" href="assets/logo-corte-a-comer.png" />
   <link rel="stylesheet" href="styles.css" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMTWX074V6"></script>
@@ -24,138 +30,185 @@
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"Corte a Comer",
-    "url":"https://corteacomer.mx/",
-    "logo":"https://corteacomer.mx/assets/logo-corte-a-comer.png",
-    "areaServed":"Mexico",
-    "description":"Operación alimentaria y catering para producciones, filmaciones y eventos corporativos.",
-    "knowsAbout":[
-      "Catering para producciones",
-      "Catering para filmaciones",
-      "Box lunch para staff y crew",
-      "Coffee break corporativo",
-      "Catering para eventos corporativos"
+    "@graph":[
+      {
+        "@type":"Organization",
+        "@id":"https://corteacomer.mx/#organization",
+        "name":"Corte a Comer",
+        "url":"https://corteacomer.mx/",
+        "logo":{"@type":"ImageObject","url":"https://corteacomer.mx/assets/logo-corte-a-comer.png"},
+        "description":"Operación alimentaria y catering para producciones, filmaciones y eventos corporativos.",
+        "areaServed":{"@type":"Country","name":"México"}
+      },
+      {
+        "@type":"WebSite",
+        "@id":"https://corteacomer.mx/#website",
+        "url":"https://corteacomer.mx/",
+        "name":"Corte a Comer",
+        "publisher":{"@id":"https://corteacomer.mx/#organization"},
+        "inLanguage":"es-MX"
+      },
+      {
+        "@type":"Service",
+        "@id":"https://corteacomer.mx/#food-operations",
+        "name":"Catering y operación alimentaria para producciones",
+        "provider":{"@id":"https://corteacomer.mx/#organization"},
+        "areaServed":{"@type":"Country","name":"México"},
+        "serviceType":[
+          "Catering para producciones",
+          "Catering para filmaciones",
+          "Box lunch para staff y crew",
+          "Coffee break corporativo",
+          "Catering para eventos corporativos"
+        ]
+      }
     ]
   }
   </script>
 </head>
 <body>
-<header class="site-header">
-  <a class="brand" href="#inicio" aria-label="Corte a Comer inicio">
-    <span class="brand-pill"><img src="assets/logo-corte-a-comer.png" alt="Corte a Comer" /></span>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header" data-header>
+  <a class="brand" href="#inicio" aria-label="Corte a Comer, inicio">
+    <img src="assets/logo-corte-a-comer.png" alt="Corte a Comer" />
   </a>
   <nav class="nav" aria-label="Principal">
     <a href="#operacion">Operación</a>
     <a href="#soluciones">Soluciones</a>
-    <a href="#casos">Casos</a>
-    <a href="#sustentabilidad">Sustentabilidad</a>
+    <a href="#casos">Casos reales</a>
     <a href="#cobertura">Cobertura</a>
   </nav>
   <a class="header-cta" href="#cotizacion">Recibir propuesta</a>
 </header>
 
-<main>
+<main id="contenido">
 <section class="hero" id="inicio">
-  <img class="hero-image" src="assets/hero-production.jpg" alt="Operación de catering para producción" />
+  <img class="hero-image" src="assets/hero-production.jpg" alt="Servicio de alimentos en una producción" fetchpriority="high" decoding="async" />
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <p class="eyebrow">Food Operations for Productions</p>
     <h1>Catering para producciones, filmaciones y eventos corporativos.</h1>
     <p class="hero-tagline">Tú produces. Nosotros alimentamos la operación.</p>
-    <p class="hero-copy">Desayunos, comidas, cenas, box lunch, coffee breaks y estaciones de servicio para staff, crew, talento y cliente.</p>
+    <p class="hero-copy">Desayuno, comida, cena, box lunch, coffee break e hidratación para staff, crew, talento y cliente.</p>
     <div class="hero-actions">
       <a class="button primary" href="#cotizacion">Recibir propuesta de alimentos</a>
       <a class="button secondary" href="https://wa.me/525572036146?text=Hola%20Corte%20a%20Comer%2C%20quiero%20cotizar%20una%20operaci%C3%B3n%20de%20alimentos." target="_blank" rel="noreferrer">WhatsApp</a>
     </div>
-    <div class="hero-proof">
-      <span>Operación 24/7</span><span>Cobertura nacional</span><span>Staff · Crew · Talento · Cliente</span><span>Hasta 3,000 personas</span>
+    <div class="hero-proof" aria-label="Capacidades principales">
+      <span>Operación 24/7</span>
+      <span>Cobertura nacional</span>
+      <span>Staff · Crew · Talento · Cliente</span>
+      <span>Hasta 3,000 personas</span>
     </div>
   </div>
+</section>
+
+<section class="proof-strip" aria-label="Servicios principales">
+  <div><strong>Desayuno</strong><span>Inicio de jornada</span></div>
+  <div><strong>Comida + cena</strong><span>Menús funcionales</span></div>
+  <div><strong>Box lunch</strong><span>Movilidad y llamados</span></div>
+  <div><strong>Coffee break</strong><span>Servicio continuo</span></div>
+</section>
+
+<section class="section cases-first" id="casos">
+  <div class="section-head split">
+    <div>
+      <p class="eyebrow color">Casos reales</p>
+      <h2>La operación se demuestra en sitio.</h2>
+    </div>
+    <p>Montajes, estaciones, buffet, atención ejecutiva y formatos individuales. Diferentes proyectos, el mismo estándar de orden, puntualidad y servicio.</p>
+  </div>
+  <div class="editorial-grid">
+    <figure class="editorial editorial-hero">
+      <img src="assets/executive-experience.jpg" alt="Servicio corporativo con mesa montada y alimentos" loading="eager" decoding="async">
+      <figcaption><strong>Servicio corporativo</strong><span>Atención ejecutiva y presentación cuidada.</span></figcaption>
+    </figure>
+    <figure class="editorial">
+      <img src="assets/coffee-bar.jpg" alt="Estación de café y bebidas para producción" loading="lazy" decoding="async">
+      <figcaption><strong>Coffee station</strong><span>Servicio continuo para jornadas largas.</span></figcaption>
+    </figure>
+    <figure class="editorial">
+      <img src="assets/crew-essential.jpg" alt="Buffet para staff y crew en producción" loading="lazy" decoding="async">
+      <figcaption><strong>Buffet / autoservicio</strong><span>Flujo ágil para equipos.</span></figcaption>
+    </figure>
+    <figure class="editorial">
+      <img src="assets/crew-pro.jpg" alt="Alimentos individuales para staff y crew" loading="lazy" decoding="async">
+      <figcaption><strong>Box lunch</strong><span>Práctico para movilidad y tiempos ajustados.</span></figcaption>
+    </figure>
+    <figure class="editorial">
+      <img src="assets/talent-premium.jpg" alt="Hospitalidad premium para talento y clientes" loading="lazy" decoding="async">
+      <figcaption><strong>Talent & client</strong><span>Hospitalidad con mayor nivel de presentación.</span></figcaption>
+    </figure>
+    <figure class="editorial">
+      <img src="assets/healthy-bowls.jpg" alt="Opciones saludables para producción" loading="lazy" decoding="async">
+      <figcaption><strong>Healthy options</strong><span>Alternativas frescas y equilibradas.</span></figcaption>
+    </figure>
+  </div>
+  <div class="center-cta"><a class="button dark" href="#cotizacion">Quiero una propuesta para mi proyecto</a></div>
 </section>
 
 <section class="section intro" id="operacion">
   <div class="section-head split">
     <div>
-      <p class="eyebrow color">Empresa nacional especializada</p>
-      <h2>No es catering tradicional. Es operación alimentaria para producciones.</h2>
+      <p class="eyebrow color">Pensamos como producción</p>
+      <h2>No es catering tradicional. Es operación alimentaria.</h2>
     </div>
-    <p>Nos integramos como el Food Department de tu proyecto: planeamos, coordinamos, servimos y resolvemos para que tu equipo mantenga energía, enfoque y ritmo durante jornadas exigentes.</p>
+    <p>Nos integramos al ritmo del proyecto: horarios, llamados, perfiles, montaje, reposición y logística. El objetivo es que comer sea la parte fácil de la jornada.</p>
   </div>
 
   <div class="challenge-grid">
-    <article><b>01</b><h3>Retrasos por logística</h3><p>La alimentación debe acompañar el call sheet, no interrumpirlo.</p></article>
-    <article><b>02</b><h3>Baja energía del equipo</h3><p>Menús funcionales para jornadas extensas y diferentes perfiles.</p></article>
-    <article><b>03</b><h3>Quejas de staff y talento</h3><p>Una operación clara reduce fricción y mejora la experiencia.</p></article>
-    <article><b>04</b><h3>Desperdicio de alimentos</h3><p>Planeamos cantidades, servicio y reposición de forma eficiente.</p></article>
-    <article><b>05</b><h3>Mala experiencia para clientes</h3><p>Presentación y atención acordes al nivel de cada proyecto.</p></article>
+    <article><b>01</b><h3>Seguimos el call sheet</h3><p>Planeamos servicios alrededor de los tiempos reales de operación.</p></article>
+    <article><b>02</b><h3>Una solución, varios perfiles</h3><p>Staff, crew, talento, cliente e invitados dentro del mismo proyecto.</p></article>
+    <article><b>03</b><h3>Formatos flexibles</h3><p>Buffet, box lunch, emplatado, coffee station o combinación.</p></article>
+    <article><b>04</b><h3>Logística coordinada</h3><p>Menú, transporte, montaje, servicio y cierre en una sola operación.</p></article>
   </div>
-  <div class="center-cta"><a class="button ghost" href="#cotizacion">Cotizar mi operación</a></div>
 </section>
 
-<section class="section solution">
+<section class="section process">
   <div class="section-head narrow">
-    <p class="eyebrow color">La solución</p>
-    <h2>No entregamos comida. Diseñamos operaciones alimentarias.</h2>
-    <p>Cada producción tiene horarios, ubicaciones, perfiles y restricciones distintas. Creamos un plan de alimentación que acompaña la operación real: crew, talento, clientes, backstage, montaje y llamados extendidos.</p>
-  </div>
-  <div class="stats">
-    <article><strong>10+</strong><span>años alimentando producciones</span></article>
-    <article><strong>24/7</strong><span>operación para llamados especiales</span></article>
-    <article><strong>1–3,000</strong><span>personas por operación</span></article>
-    <article><strong>Nacional</strong><span>cobertura coordinada</span></article>
+    <p class="eyebrow color">Cómo trabajamos</p>
+    <h2>De un briefing corto a una operación resuelta.</h2>
+    <p>Nos das los datos críticos. Nosotros proponemos menú, formato de servicio y ejecución.</p>
   </div>
   <div class="process-grid">
-    <article><span>01</span><h3>Briefing</h3><p>Entendemos horarios, locaciones, perfiles y número de personas.</p></article>
-    <article><span>02</span><h3>Menú y servicio</h3><p>Definimos formato, dietas especiales, entregas y experiencia.</p></article>
-    <article><span>03</span><h3>Logística</h3><p>Coordinamos tiempos, rutas, personal y montaje sin fricción.</p></article>
-    <article><span>04</span><h3>Ejecución</h3><p>Servimos con orden, higiene, puntualidad y mejora continua.</p></article>
+    <article><span>01</span><h3>Briefing</h3><p>Fecha, ciudad, horarios, cantidad y perfiles.</p></article>
+    <article><span>02</span><h3>Propuesta</h3><p>Menú, servicio, bebidas y formatos adecuados.</p></article>
+    <article><span>03</span><h3>Logística</h3><p>Rutas, personal, montaje y ventanas de entrega.</p></article>
+    <article><span>04</span><h3>Ejecución</h3><p>Orden, higiene, puntualidad y reposición.</p></article>
   </div>
 </section>
 
 <section class="section portfolio" id="soluciones">
   <div class="section-head">
-    <p class="eyebrow color">Portafolio</p>
-    <h2>Soluciones para cada necesidad de tu producción.</h2>
-    <p>Un solo aliado para crew, talento, coffee bar y operación completa.</p>
+    <p class="eyebrow color">Soluciones</p>
+    <h2>Una operación para cada momento de la jornada.</h2>
+    <p>Podemos resolver un solo servicio o acompañar la producción durante todo el día.</p>
   </div>
   <div class="service-grid">
-    <article><img src="assets/crew-essential.jpg" alt="Comedor para crew en producción" loading="lazy"><div><h3>Crew Essential</h3><p>Alimentación completa, balanceada y confiable para todo tu crew.</p><small>Desayuno · comida · cena</small></div></article>
-    <article><img src="assets/crew-pro.jpg" alt="Box lunch para jornadas de producción" loading="lazy"><div><h3>Crew Pro</h3><p>Opciones prácticas y de alto rendimiento para jornadas exigentes.</p><small>Box lunch · entregas escalonadas</small></div></article>
-    <article><img src="assets/healthy-bowls.jpg" alt="Bowls saludables para equipo de trabajo" loading="lazy"><div><h3>Healthy Crew</h3><p>Menús frescos y nutritivos que cuidan a tu equipo.</p><small>Healthy corner · bowls · snacks</small></div></article>
-    <article><img src="assets/talent-premium.jpg" alt="Hospitalidad premium para talento e invitados" loading="lazy"><div><h3>Talent Premium</h3><p>Experiencias gastronómicas para talento, speakers e invitados especiales.</p><small>Presentación cuidada · servicio especial</small></div></article>
-    <article><img src="assets/executive-experience.jpg" alt="Coffee station ejecutivo para juntas" loading="lazy"><div><h3>Executive Experience</h3><p>Hospitalidad de alto nivel para juntas, reuniones y clientes VIP.</p><small>Emplatado · atención ejecutiva</small></div></article>
-    <article><img src="assets/coffee-bar.jpg" alt="Coffee bar para producción" loading="lazy"><div><h3>Production Coffee Bar</h3><p>Café, bebidas y snacks para mantener la energía en set.</p><small>Servicio continuo · coffee break</small></div></article>
+    <article><img src="assets/crew-essential.jpg" alt="Desayuno comida y cena para crew" loading="lazy" decoding="async"><div><h3>Crew Essential</h3><p>Alimentación completa y confiable para staff y crew.</p><small>Desayuno · comida · cena</small></div></article>
+    <article><img src="assets/crew-pro.jpg" alt="Box lunch para producciones" loading="lazy" decoding="async"><div><h3>Crew Pro</h3><p>Alimentos prácticos para movilidad, traslados y ventanas reducidas.</p><small>Box lunch · entregas escalonadas</small></div></article>
+    <article><img src="assets/healthy-bowls.jpg" alt="Healthy corner y opciones saludables" loading="lazy" decoding="async"><div><h3>Healthy Crew</h3><p>Alternativas frescas para complementar jornadas largas.</p><small>Healthy corner · fruta · snacks</small></div></article>
+    <article><img src="assets/talent-premium.jpg" alt="Servicio premium para talento" loading="lazy" decoding="async"><div><h3>Talent Premium</h3><p>Hospitalidad con presentación cuidada para talento e invitados.</p><small>Servicio especial · atención dedicada</small></div></article>
+    <article><img src="assets/executive-experience.jpg" alt="Servicio ejecutivo para clientes" loading="lazy" decoding="async"><div><h3>Executive Experience</h3><p>Atención para juntas, clientes y espacios ejecutivos.</p><small>Emplatado · hospitalidad</small></div></article>
+    <article><img src="assets/coffee-bar.jpg" alt="Coffee break corporativo" loading="lazy" decoding="async"><div><h3>Production Coffee Bar</h3><p>Café, té, bebidas y acompañamientos durante la operación.</p><small>Coffee break · servicio continuo</small></div></article>
   </div>
-</section>
-
-<section class="section cases" id="casos">
-  <div class="section-head split">
-    <div>
-      <p class="eyebrow color">Experiencia comprobada</p>
-      <h2>Operaciones reales, no solo promesas.</h2>
-    </div>
-    <p>Mostramos el servicio en contexto: montajes, estaciones, buffet, atención ejecutiva y formatos individuales. La operación cambia según el proyecto; el estándar de orden y servicio se mantiene.</p>
-  </div>
-  <div class="case-grid">
-    <figure class="case case-wide"><img src="assets/executive-experience.jpg" alt="Servicio ejecutivo y mesa montada" loading="lazy"><figcaption><strong>Servicio corporativo</strong><span>Atención ejecutiva y presentación cuidada.</span></figcaption></figure>
-    <figure class="case"><img src="assets/coffee-bar.jpg" alt="Estación de café para producción" loading="lazy"><figcaption><strong>Coffee station</strong><span>Servicio continuo para jornadas largas.</span></figcaption></figure>
-    <figure class="case"><img src="assets/crew-essential.jpg" alt="Buffet para producción" loading="lazy"><figcaption><strong>Buffet / autoservicio</strong><span>Flujo ágil para equipos medianos y grandes.</span></figcaption></figure>
-    <figure class="case"><img src="assets/crew-pro.jpg" alt="Box lunch individual" loading="lazy"><figcaption><strong>Box lunch</strong><span>Práctico para movilidad y tiempos ajustados.</span></figcaption></figure>
-    <figure class="case"><img src="assets/talent-premium.jpg" alt="Servicio premium para talento" loading="lazy"><figcaption><strong>Talent & client</strong><span>Hospitalidad con mayor nivel de presentación.</span></figcaption></figure>
+  <div class="seo-links" aria-label="Servicios especializados">
+    <a href="catering-para-producciones/">Catering para producciones →</a>
+    <a href="coffee-break-corporativo/">Coffee break corporativo →</a>
+    <a href="box-lunch-producciones/">Box lunch para staff y crew →</a>
   </div>
 </section>
 
 <section class="section formats">
   <div class="section-head narrow">
     <p class="eyebrow color">Formatos de servicio</p>
-    <h2>La propuesta se adapta a tu operación.</h2>
-    <p>No obligamos al proyecto a adaptarse al catering. Elegimos el formato según espacios, horarios, presupuesto y dinámica real.</p>
+    <h2>El formato se adapta a la producción, no al revés.</h2>
   </div>
   <div class="format-grid">
-    <article><b>01</b><h3>Buffet / autoservicio</h3><p>Ideal para grupos medianos y grandes y ventanas de alimentación definidas.</p></article>
-    <article><b>02</b><h3>Box lunch / individual</h3><p>Para traslados, llamados escalonados y equipos con poco tiempo disponible.</p></article>
-    <article><b>03</b><h3>Emplatado</h3><p>Para talento, invitados, juntas o servicios que requieren mayor presentación.</p></article>
+    <article><b>01</b><h3>Buffet / autoservicio</h3><p>Para grupos medianos y grandes y ventanas de alimentación definidas.</p></article>
+    <article><b>02</b><h3>Box lunch / individual</h3><p>Para llamados escalonados, movilidad y consumo rápido.</p></article>
+    <article><b>03</b><h3>Emplatado</h3><p>Para talento, clientes, juntas o servicios de mayor presentación.</p></article>
     <article><b>04</b><h3>Coffee station</h3><p>Café, hidratación y snacks disponibles durante la jornada.</p></article>
   </div>
 </section>
@@ -164,115 +217,131 @@
   <div class="sustainability-card">
     <div class="sustainability-copy">
       <p class="eyebrow">Operación responsable</p>
-      <h2>Menos desperdicio. Más responsabilidad.</h2>
-      <p>Diseñamos operaciones para reducir impacto ambiental sin comprometer puntualidad, presentación ni experiencia de servicio.</p>
+      <h2>Menos desperdicio. Más eficiencia.</h2>
+      <p>Planeamos cantidades, formatos y logística para reducir merma y materiales innecesarios sin comprometer la operación.</p>
       <ul>
-        <li>Materiales compostables y biodegradables cuando la operación lo permite.</li>
-        <li>Reducción de plásticos de un solo uso.</li>
-        <li>Planeación de menús con menor desperdicio.</li>
-        <li>Rutas y logística optimizadas.</li>
+        <li>Materiales compostables o biodegradables cuando el servicio lo permite.</li>
+        <li>Planeación de cantidades y reposición para reducir desperdicio.</li>
+        <li>Menos plásticos de un solo uso cuando existe una alternativa viable.</li>
+        <li>Rutas y logística coordinadas para cada proyecto.</li>
       </ul>
-      <a class="button secondary" href="#cotizacion">Cotizar operación sustentable</a>
     </div>
-    <img src="assets/eco-responsable.jpg" alt="Operación responsable y materiales sustentables" loading="lazy">
+    <img src="assets/eco-responsable.jpg" alt="Materiales y servicio responsable de alimentos" loading="lazy" decoding="async">
   </div>
 </section>
 
 <section class="section coverage" id="cobertura">
   <div class="section-head narrow">
     <p class="eyebrow color">Full Food Operations</p>
-    <h2>Planeación, logística y servicio para producciones de cualquier escala.</h2>
-    <p>Desde una junta ejecutiva hasta una producción de alta demanda: coordinamos la alimentación de principio a fin.</p>
+    <h2>Desde equipos pequeños hasta operaciones de gran escala.</h2>
+    <p>Coordinamos alimentación para producciones, filmaciones y eventos corporativos dentro y fuera de CDMX.</p>
   </div>
   <div class="coverage-grid">
-    <article><strong>24/7</strong><span>Operación para producciones</span></article>
-    <article><strong>1–3,000</strong><span>Personas</span></article>
+    <article><strong>24/7</strong><span>Operación para llamados especiales</span></article>
+    <article><strong>1–3,000</strong><span>Personas por operación</span></article>
     <article><strong>Nacional</strong><span>Cobertura coordinada</span></article>
-    <article><strong>Higiene + calidad</strong><span>Procesos y presentación cuidada</span></article>
+    <article><strong>Flexible</strong><span>Staff · crew · talento · cliente</span></article>
   </div>
 </section>
 
-<section class="section faq">
+<section class="section faq" id="faq">
   <div class="section-head narrow">
-    <p class="eyebrow color">Preguntas frecuentes</p>
-    <h2>Lo que normalmente necesitas saber antes de cotizar.</h2>
+    <p class="eyebrow color">Antes de cotizar</p>
+    <h2>Respuestas rápidas para producción.</h2>
   </div>
   <div class="faq-list">
-    <details><summary>¿Atienden producciones y filmaciones?</summary><p>Sí. Diseñamos alimentación para staff, crew, talento y clientes según horarios y dinámica de producción.</p></details>
+    <details><summary>¿Atienden producciones y filmaciones?</summary><p>Sí. Diseñamos alimentación para staff, crew, talento y clientes según horarios, sede y dinámica de producción.</p></details>
     <details><summary>¿Pueden cubrir desayuno, comida y cena?</summary><p>Sí. Podemos operar uno o varios tiempos durante la misma jornada y coordinar entregas escalonadas.</p></details>
-    <details><summary>¿Manejan box lunch y coffee break?</summary><p>Sí. Podemos combinar formatos individuales, buffet, emplatado, coffee station e hidratación.</p></details>
-    <details><summary>¿Trabajan fuera de CDMX?</summary><p>Sí. Coordinamos operaciones en distintas ciudades según alcance, volumen y requerimientos del proyecto.</p></details>
-    <details><summary>¿Pueden adaptar menús según presupuesto?</summary><p>Sí. El menú se diseña considerando número de personas, tiempos, perfil, sede y presupuesto objetivo.</p></details>
+    <details><summary>¿Manejan box lunch, buffet y coffee break?</summary><p>Sí. El formato se define según espacio, horarios, número de personas y flujo de consumo.</p></details>
+    <details><summary>¿Trabajan fuera de CDMX?</summary><p>Sí. Coordinamos operaciones en distintas ciudades de México según alcance y volumen del proyecto.</p></details>
+    <details><summary>¿Pueden adaptar el menú al presupuesto?</summary><p>Sí. Diseñamos la propuesta considerando cantidad, tiempos, perfil, sede, restricciones y presupuesto objetivo.</p></details>
   </div>
 </section>
 
 <section class="quote" id="cotizacion">
   <div class="quote-copy">
-    <p class="eyebrow">Solicitar cotización</p>
-    <h2>Cuéntanos tu operación y te enviamos una propuesta.</h2>
-    <p>Compártenos fecha, ciudad, número de personas, horarios y tiempos de alimentación. Con eso podemos diseñar menú, formato de servicio y operación con mucha mayor precisión.</p>
-    <a class="whatsapp" href="https://wa.me/525572036146?text=Hola%20Corte%20a%20Comer%2C%20quiero%20recibir%20una%20propuesta%20de%20alimentos." target="_blank" rel="noreferrer">Hablar por WhatsApp</a>
+    <p class="eyebrow">Cotización</p>
+    <h2>Cuéntanos tu operación. Nosotros armamos la propuesta.</h2>
+    <p>Con fecha, ciudad, número de personas y tiempos de alimentación ya podemos construir una primera propuesta útil.</p>
+    <div class="quote-points">
+      <span>✓ Menú sugerido</span>
+      <span>✓ Formato de servicio</span>
+      <span>✓ Logística</span>
+      <span>✓ Inversión</span>
+    </div>
+    <a class="whatsapp" href="https://wa.me/525572036146?text=Hola%20Corte%20a%20Comer%2C%20quiero%20recibir%20una%20propuesta%20de%20alimentos." target="_blank" rel="noreferrer">Prefiero WhatsApp</a>
   </div>
+
   <form class="lead-form" id="quote-form" action="https://formspree.io/f/mqeoebqa" method="POST">
-    <input type="hidden" name="_subject" value="Nueva solicitud desde corteacomer.mx" />
+    <input type="hidden" name="_subject" value="Nuevo lead - corteacomer.mx" />
+    <input type="hidden" name="page_url" value="" data-page-url />
+    <input type="hidden" name="utm_source" value="" data-attribution="utm_source" />
+    <input type="hidden" name="utm_medium" value="" data-attribution="utm_medium" />
+    <input type="hidden" name="utm_campaign" value="" data-attribution="utm_campaign" />
+    <input type="hidden" name="gclid" value="" data-attribution="gclid" />
     <label class="honeypot">No llenar<input name="_gotcha" tabindex="-1" autocomplete="off"></label>
     <div class="form-status" data-form-status aria-live="polite"></div>
+
     <div class="form-grid">
       <label>Nombre*<input name="name" autocomplete="name" required placeholder="Tu nombre"></label>
-      <label>Empresa / agencia<input name="company" placeholder="Nombre de la empresa"></label>
+      <label>Empresa / agencia<input name="company" autocomplete="organization" placeholder="Nombre de la empresa"></label>
       <label>Correo*<input name="email" type="email" autocomplete="email" required placeholder="correo@empresa.com"></label>
-      <label>Teléfono / WhatsApp*<input name="phone" type="tel" autocomplete="tel" required placeholder="+52..."></label>
-      <label>Tipo de proyecto*
-        <select name="project_type" required>
-          <option value="">Selecciona</option>
-          <option>Filmación / producción</option>
-          <option>Evento corporativo</option>
-          <option>Congreso / convención</option>
-          <option>Activación</option>
-          <option>Junta / reunión</option>
-          <option>Otro</option>
-        </select>
-      </label>
-      <label>Fecha(s) del servicio*<input name="dates" required placeholder="Ej. 12–14 marzo 2027"></label>
+      <label>Teléfono / WhatsApp<input name="phone" type="tel" autocomplete="tel" placeholder="+52..."></label>
+      <label>Fecha(s)*<input name="dates" required placeholder="Ej. 12–14 marzo 2027"></label>
       <label>Ciudad / sede*<input name="city" required placeholder="Ej. Ciudad de México"></label>
       <label>Número de personas*<input name="people" inputmode="numeric" required placeholder="Ej. 120"></label>
-      <label class="full">Horario aproximado*<input name="schedule" required placeholder="Ej. 07:00 a 21:00"></label>
+      <label>Horario aproximado<input name="schedule" placeholder="Ej. 07:00 a 21:00"></label>
     </div>
+
     <fieldset>
       <legend>¿Qué necesitas?</legend>
       <div class="checks">
         <label><input type="checkbox" name="needs" value="Desayuno"> Desayuno</label>
-        <label><input type="checkbox" name="needs" value="Snack ligero"> Snack ligero</label>
+        <label><input type="checkbox" name="needs" value="Snack"> Snack</label>
         <label><input type="checkbox" name="needs" value="Comida"> Comida</label>
-        <label><input type="checkbox" name="needs" value="Snack fuerte"> Snack fuerte</label>
         <label><input type="checkbox" name="needs" value="Cena"> Cena</label>
         <label><input type="checkbox" name="needs" value="Coffee break"> Coffee break</label>
-        <label><input type="checkbox" name="needs" value="Estación de café"> Estación de café</label>
         <label><input type="checkbox" name="needs" value="Hidratación"> Hidratación</label>
       </div>
     </fieldset>
-    <div class="form-grid">
-      <label>Perfil de atención
-        <select name="audience">
-          <option>Mixto</option><option>Staff</option><option>Crew</option><option>Talento</option><option>Cliente / invitados</option>
-        </select>
-      </label>
-      <label>Formato estimado
-        <select name="format">
-          <option>Por definir</option><option>Box lunch / individual</option><option>Buffet / autoservicio</option><option>Emplatado</option><option>Coffee station</option>
-        </select>
-      </label>
-      <label>Presupuesto objetivo por persona<input name="budget" placeholder="Opcional"></label>
-      <label>Restricciones / necesidades especiales<input name="restrictions" placeholder="Alergias, vegetarianos, accesos..."></label>
-      <label class="full">Cuéntanos algo más<textarea name="message" rows="4" placeholder="Información adicional que debamos considerar"></textarea></label>
-    </div>
+
+    <details class="form-more">
+      <summary>Agregar detalles para afinar la propuesta <span>opcional</span></summary>
+      <div class="form-grid optional-grid">
+        <label>Tipo de proyecto
+          <select name="project_type">
+            <option value="">Por definir</option>
+            <option>Filmación / producción</option>
+            <option>Evento corporativo</option>
+            <option>Congreso / convención</option>
+            <option>Activación</option>
+            <option>Junta / reunión</option>
+            <option>Otro</option>
+          </select>
+        </label>
+        <label>Perfil de atención
+          <select name="audience">
+            <option>Mixto</option><option>Staff</option><option>Crew</option><option>Talento</option><option>Cliente / invitados</option>
+          </select>
+        </label>
+        <label>Formato estimado
+          <select name="format">
+            <option>Por definir</option><option>Box lunch / individual</option><option>Buffet / autoservicio</option><option>Emplatado</option><option>Coffee station</option>
+          </select>
+        </label>
+        <label>Presupuesto objetivo por persona<input name="budget" placeholder="Opcional"></label>
+        <label class="full">Restricciones / necesidades especiales<textarea name="message" rows="3" placeholder="Alergias, dietas, accesos, horarios, requerimientos especiales..."></textarea></label>
+      </div>
+    </details>
+
     <button class="button primary wide" type="submit">Recibir mi propuesta</button>
+    <p class="form-note">Usaremos estos datos únicamente para preparar y dar seguimiento a tu solicitud.</p>
   </form>
 </section>
 </main>
 
 <footer>
-  <a class="brand" href="#inicio"><span class="brand-pill"><img src="assets/logo-corte-a-comer.png" alt="Corte a Comer"></span></a>
+  <a class="brand" href="#inicio"><img src="assets/logo-corte-a-comer.png" alt="Corte a Comer"></a>
   <p>Food Operations for Productions</p>
   <div class="footer-links">
     <a href="catering-para-producciones/">Catering para producciones</a>
@@ -280,6 +349,12 @@
     <a href="box-lunch-producciones/">Box lunch</a>
   </div>
 </footer>
+
+<div class="mobile-cta" aria-label="Acciones rápidas">
+  <a href="#cotizacion">Recibir propuesta</a>
+  <a href="https://wa.me/525572036146?text=Hola%20Corte%20a%20Comer%2C%20quiero%20cotizar." target="_blank" rel="noreferrer">WhatsApp</a>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
