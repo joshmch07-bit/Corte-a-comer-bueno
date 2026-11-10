@@ -203,7 +203,7 @@ footer .footer-links a:hover{color:#fff}
 @media(max-width:640px){.site-header .brand img{height:28px}}
 
 /* Real-case presentation: keep source photos at a sharp display size. */
-.case-brand-card{max-width:var(--max);margin:0 auto 18px;padding:28px 30px;border-radius:24px;background:#111418;color:#fff;display:grid;grid-template-columns:1.25fr .75fr;gap:28px;align-items:center}
+.case-brand-card{max-width:var(--max);margin:0 auto 18px;padding:22px;border-radius:24px;background:#111418;color:#fff;display:grid;grid-template-columns:minmax(250px,.95fr) 1.15fr .75fr;gap:26px;align-items:center}
 .case-brand-card h3{font-size:clamp(28px,3vw,42px);margin:3px 0 10px}
 .case-brand-card p{margin-bottom:0;color:rgba(255,255,255,.72);line-height:1.55}
 .case-kicker{font-size:12px!important;letter-spacing:.12em;text-transform:uppercase;font-weight:900;color:#ff6c86!important}
@@ -229,3 +229,7 @@ footer .footer-links a:hover{color:#fff}
   .case-brand-card{padding:24px 20px}
   .case-photo-note{text-align:left}
 }
+
+.case-brand-visual{overflow:hidden;border-radius:16px;background:#060708;border:1px solid rgba(255,255,255,.08)}
+.case-brand-visual img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.case-brand-copy{min-width:0}
