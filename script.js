@@ -55,3 +55,6 @@ form?.addEventListener('submit',async e=>{
 document.querySelectorAll('a[href="#cotizacion"],a[href="/#cotizacion"]').forEach(a=>a.addEventListener('click',()=>track('select_content',{event_category:'cta',event_label:a.textContent.trim()})));
 document.querySelectorAll('a[href*="wa.me"]').forEach(a=>a.addEventListener('click',()=>track('contact',{event_category:'whatsapp',event_label:a.textContent.trim()})));
 document.querySelectorAll('.seo-links a,.footer-links a').forEach(a=>a.addEventListener('click',()=>track('select_content',{event_category:'internal_link',event_label:a.textContent.trim()})));
+
+document.querySelectorAll('.urgent-cta,.urgent-float,.button.urgent,.urgent-link').forEach(a=>a.addEventListener('click',()=>track('urgent_whatsapp',{event_category:'lead',event_label:a.textContent.trim()})));
+document.querySelectorAll('.intent-grid a').forEach(a=>a.addEventListener('click',()=>track('select_content',{event_category:'solution_intent',event_label:a.textContent.trim()})));
