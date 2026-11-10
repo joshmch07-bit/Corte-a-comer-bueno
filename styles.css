@@ -201,3 +201,31 @@ img[data-real-photo]{background:#e9e9e9}
 footer .footer-links a{color:rgba(255,255,255,.78)}
 footer .footer-links a:hover{color:#fff}
 @media(max-width:640px){.site-header .brand img{height:28px}}
+
+/* Real-case presentation: keep source photos at a sharp display size. */
+.case-brand-card{max-width:var(--max);margin:0 auto 18px;padding:28px 30px;border-radius:24px;background:#111418;color:#fff;display:grid;grid-template-columns:1.25fr .75fr;gap:28px;align-items:center}
+.case-brand-card h3{font-size:clamp(28px,3vw,42px);margin:3px 0 10px}
+.case-brand-card p{margin-bottom:0;color:rgba(255,255,255,.72);line-height:1.55}
+.case-kicker{font-size:12px!important;letter-spacing:.12em;text-transform:uppercase;font-weight:900;color:#ff6c86!important}
+.case-brand-meta{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+.case-brand-meta span{padding:9px 12px;border:1px solid rgba(255,255,255,.16);border-radius:999px;font-size:12px;font-weight:800;color:rgba(255,255,255,.88)}
+.editorial-grid-real{grid-template-columns:repeat(5,minmax(0,1fr));grid-auto-rows:185px}
+.editorial-grid-real .editorial{grid-column:auto;grid-row:auto}
+.editorial-grid-real .editorial img{transform:none}
+.editorial-grid-real .editorial:hover img{transform:none}
+.case-photo-note{max-width:var(--max);margin:12px auto 0;text-align:right;color:var(--muted);font-size:12px}
+.service-grid-clean article{min-height:235px;display:flex;flex-direction:column;justify-content:space-between;padding:26px}
+.service-grid-clean article>div{padding:0}
+.service-grid-clean .service-num{font-size:13px;font-weight:900;color:var(--accent);letter-spacing:.08em}
+.service-grid-clean h3{margin-top:28px}
+.service-grid-clean img{display:none}
+@media(max-width:980px){
+  .editorial-grid-real{grid-template-columns:repeat(3,1fr);grid-auto-rows:190px}
+  .case-brand-card{grid-template-columns:1fr}
+  .case-brand-meta{justify-content:flex-start}
+}
+@media(max-width:640px){
+  .editorial-grid-real{grid-template-columns:repeat(2,1fr);grid-auto-rows:165px;gap:10px}
+  .case-brand-card{padding:24px 20px}
+  .case-photo-note{text-align:left}
+}
