@@ -1,11 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://corteacomer.mx/</loc><lastmod>2026-11-10</lastmod><priority>1.0</priority></url>
-  <url><loc>https://corteacomer.mx/catering-para-producciones/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
-  <url><loc>https://corteacomer.mx/catering-para-filmaciones/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
-  <url><loc>https://corteacomer.mx/box-lunch-producciones/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
-  <url><loc>https://corteacomer.mx/coffee-break-corporativo/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
-  <url><loc>https://corteacomer.mx/catering-eventos-corporativos/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
-  <url><loc>https://corteacomer.mx/catering-en-locacion/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
-  <url><loc>https://corteacomer.mx/alimentacion-staff-crew/</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://corteacomer.mx/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://corteacomer.mx/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://corteacomer.mx/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://corteacomer.mx/"/>
+  </url>
+  <url>
+    <loc>https://corteacomer.mx/en/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://corteacomer.mx/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://corteacomer.mx/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://corteacomer.mx/"/>
+  </url>
+  <url>
+    <loc>https://corteacomer.mx/catering-para-producciones/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://corteacomer.mx/catering-para-producciones/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://corteacomer.mx/en/production-catering/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://corteacomer.mx/catering-para-producciones/"/>
+  </url>
+  <url>
+    <loc>https://corteacomer.mx/en/production-catering/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://corteacomer.mx/catering-para-producciones/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://corteacomer.mx/en/production-catering/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://corteacomer.mx/catering-para-producciones/"/>
+  </url>
+  <url>
+    <loc>https://corteacomer.mx/catering-para-filmaciones/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://corteacomer.mx/catering-para-filmaciones/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://corteacomer.mx/en/film-set-catering/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://corteacomer.mx/catering-para-filmaciones/"/>
+  </url>
+  <url>
+    <loc>https://corteacomer.mx/en/film-set-catering/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://corteacomer.mx/catering-para-filmaciones/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://corteacomer.mx/en/film-set-catering/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://corteacomer.mx/catering-para-filmaciones/"/>
+  </url>
+  <url>
+    <loc>https://corteacomer.mx/box-lunch-producciones/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://corteacomer.mx/box-lunch-producciones/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://corteacomer.mx/en/crew-boxed-lunches/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://corteacomer.mx/box-lunch-producciones/"/>
+  </url>
+  <url>
+    <loc>https://corteacomer.mx/en/crew-boxed-lunches/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://corteacomer.mx/box-lunch-producciones/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://corteacomer.mx/en/crew-boxed-lunches/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://corteacomer.mx/box-lunch-producciones/"/>
+  </url>
+  <url>
+    <loc>https://corteacomer.mx/coffee-break-corporativo/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://corteacomer.mx/coffee-break-corporativo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://corteacomer.mx/en/coffee-break-catering/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://corteacomer.mx/coffee-break-corporativo/"/>
+  </url>
+  <url>
+    <loc>https://corteacomer.mx/en/coffee-break-catering/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://corteacomer.mx/coffee-break-corporativo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://corteacomer.mx/en/coffee-break-catering/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://corteacomer.mx/coffee-break-corporativo/"/>
+  </url>
+  <url>
+    <loc>https://corteacomer.mx/catering-eventos-corporativos/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://corteacomer.mx/catering-eventos-corporativos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://corteacomer.mx/en/corporate-event-catering/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://corteacomer.mx/catering-eventos-corporativos/"/>
+  </url>
+  <url>
+    <loc>https://corteacomer.mx/en/corporate-event-catering/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://corteacomer.mx/catering-eventos-corporativos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://corteacomer.mx/en/corporate-event-catering/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://corteacomer.mx/catering-eventos-corporativos/"/>
+  </url>
+  <url>
+    <loc>https://corteacomer.mx/catering-en-locacion/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://corteacomer.mx/catering-en-locacion/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://corteacomer.mx/en/on-location-catering/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://corteacomer.mx/catering-en-locacion/"/>
+  </url>
+  <url>
+    <loc>https://corteacomer.mx/en/on-location-catering/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://corteacomer.mx/catering-en-locacion/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://corteacomer.mx/en/on-location-catering/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://corteacomer.mx/catering-en-locacion/"/>
+  </url>
+  <url>
+    <loc>https://corteacomer.mx/alimentacion-staff-crew/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://corteacomer.mx/alimentacion-staff-crew/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://corteacomer.mx/en/crew-meals/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://corteacomer.mx/alimentacion-staff-crew/"/>
+  </url>
+  <url>
+    <loc>https://corteacomer.mx/en/crew-meals/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://corteacomer.mx/alimentacion-staff-crew/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://corteacomer.mx/en/crew-meals/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://corteacomer.mx/alimentacion-staff-crew/"/>
+  </url>
 </urlset>
