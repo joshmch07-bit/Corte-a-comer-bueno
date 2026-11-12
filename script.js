@@ -1,4 +1,5 @@
 const form=document.querySelector('.lead-form');
+const isEnglish=document.documentElement.lang.toLowerCase().startsWith('en');
 const hero=document.querySelector('.hero');
 const heroImage=document.querySelector('.hero-image');
 const header=document.querySelector('[data-header]');
@@ -37,22 +38,22 @@ form?.addEventListener('submit',async e=>{
   const btn=form.querySelector('button[type="submit"]');
   const status=form.querySelector('[data-form-status]');
   const old=btn.textContent;
-  btn.disabled=true;btn.textContent='Enviando solicitud...';
+  btn.disabled=true;btn.textContent=isEnglish?'Sending request...':'Enviando solicitud...';
   try{
     const r=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
     if(!r.ok)throw new Error();
     track('generate_lead',{event_category:'form',event_label:'quote_form_v3'});
     form.reset();
-    status.textContent='Listo. Recibimos tu solicitud. Te contactaremos para preparar la propuesta.';
+    status.textContent=isEnglish?'Thanks! We received your request and will get in touch to prepare a proposal.':'Listo. Recibimos tu solicitud. Te contactaremos para preparar la propuesta.';
     status.className='form-status is-visible is-success';
   }catch{
-    status.textContent='No pudimos enviar la solicitud. Intenta nuevamente o escríbenos por WhatsApp.';
+    status.textContent=isEnglish?'We could not send your request. Please try again or contact us by email or WhatsApp.':'No pudimos enviar la solicitud. Intenta nuevamente o escríbenos por WhatsApp.';
     status.className='form-status is-visible is-error';
     track('form_error',{event_category:'form'});
   }finally{btn.disabled=false;btn.textContent=old}
 });
 
-document.querySelectorAll('a[href="#cotizacion"],a[href="/#cotizacion"]').forEach(a=>a.addEventListener('click',()=>track('select_content',{event_category:'cta',event_label:a.textContent.trim()})));
+document.querySelectorAll('a[href="#cotizacion"],a[href="/#cotizacion"],a[href="/en/#cotizacion"]').forEach(a=>a.addEventListener('click',()=>track('select_content',{event_category:'cta',event_label:a.textContent.trim()})));
 document.querySelectorAll('a[href*="wa.me"]').forEach(a=>a.addEventListener('click',()=>track('contact',{event_category:'whatsapp',event_label:a.textContent.trim()})));
 document.querySelectorAll('.seo-links a,.footer-links a').forEach(a=>a.addEventListener('click',()=>track('select_content',{event_category:'internal_link',event_label:a.textContent.trim()})));
 
